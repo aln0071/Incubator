@@ -29,7 +29,7 @@ I used an incandescent lamp as the heating element in this incubator. Initially,
 **Step 2: Building the humidifier**
 For building a humidifier, you need a piezoelectric atomizer. It is a piezoelectric vibrating drum that vibrates at a frequency of 1.7 MHz. When water comes in contact with this drum, it instantly turns into vapor.
 
-If we place the drum directly in a container with water, then it may be damaged after prolonged exposure. Also, it may loose contact with water once the water level drops. To solve this issue, I used the [capillary action](https://en.wikipedia.org/wiki/Capillary_action) of water.
+If we place the drum directly in a container with water, then it may be damaged after prolonged exposure. Also, it may loose contact with water once the water level drops. To solve this issue, I used the [capillary action](https://en.wikipedia.org/wiki/Capillary_action){target="_blank"} of water.
 
 >Step 1: Take a small piece of cotton ( the type of cotton used for dressing wounds ) and make it into a roll.
 >
