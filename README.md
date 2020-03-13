@@ -20,6 +20,7 @@ I have made this chicken egg incubator using the Arduino Uno microcontroller and
 - Cotton roll ( used for dressing wound ) x 1
 - Iron nail x 1
 - Candle x 1
+- Glue for plastic
 - 1 meter hose ( I used an old water level checking hose )
 
 ## Steps for making
@@ -41,6 +42,18 @@ If we place the drum directly in a container with water, then it may be damaged 
 >
 >Step 5: Position the piezoelectric vibrating drum on top of the exposed end of the cotton roll which is outside the container. Make sure that the drum touches the tip of the cotton roll gently. This will cause the water on the tip getting atomized due to the vibration of the drum.
 >
->Step 6: Put another small hole on the lid of the container and insert a hose through it. This can be used to refill the container without opening the incubator.
+>Step 6: Secure the drum in position using hot glue. Also fix the frequency generator circuit to the side of the container using hot glue.
 >
->Step 7: Put some extra holes on the lid for ventilation. These are important for proper capillary action.
+>Step 7: Put another small hole on the lid of the container and insert a hose through it. This can be used to refill the container without opening the incubator.
+>
+>Step 8: Put some extra holes on the lid for ventilation. These are important for proper capillary action.
+
+**Step 3: Building the egg holder base**
+Now, we need to build a base on which the eggs are placed. For this, take the chicken wire mesh and cut it to the length and breadth of the bucket. Place it inside the bucket and secure it in position using cable ties. You can put holes on the bucket using a heated iron nail and insert cable ties through those holes to secure the mesh.
+
+**Step 4: Building the egg turner**
+Chicken egg need to be turned every 8 hours during the first 18 days of incubation. This is because the embryo will drift towards the bottom due to gravity and so, we need to recenter it for successful hatch. I built the egg turner using surface mount cable raceway. Our egg turner will have a frame inside which eggs are placed. When the 
+
+>Step 1: Take the 1/2 inch cable raceway and cut two piece having (3/4)th of the length of your bucket. These pieces will form the left and right sides of your frame.
+>
+>Step 2: Now, we need pieces from left to right, joining the two pieces. The frame will have a table row structure.
