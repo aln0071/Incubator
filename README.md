@@ -56,8 +56,8 @@ If we place the drum directly in a container with water, then it may be damaged 
 Now, we need to build a base on which the eggs are placed. For this, take the chicken wire mesh and cut it to the length and breadth of the bucket. Place it inside the bucket and secure it in position using cable ties. You can put holes on the bucket using a heated iron nail and insert cable ties through those holes to secure the mesh.
 
 **Step 4: Building the egg turner**
-Chicken egg need to be turned every 8 hours during the first 18 days of incubation. This is because the embryo will drift towards the bottom due to gravity and so, we need to recenter it for successful hatch. I built the egg turner using surface mount cable raceway. Our egg turner will have a frame inside which eggs are placed. When the 
+Chicken egg need to be turned every 8 hours during the first 18 days of incubation. This is because the embryo will drift towards the bottom due to gravity and so, we need to recenter it for successful hatch. I built the egg turner using surface mount cable raceway. Our egg turner will have a frame inside which eggs are placed. The frame will move on top of a static base, which in turn causes the eggs to roll. I tried to implement the movement using servo motor but I have not fully implemented it. I am working on a better turner design using a [rack and pinion mechanism](https://en.wikipedia.org/wiki/Rack_and_pinion). But I have already made the egg holder frame and a friction lesstrack through which the frame can move.
 
 >Step 1: Take the 1/2 inch cable raceway and cut two piece having (3/4)th of the length of your bucket. These pieces will form the left and right sides of your frame.
 >
->Step 2: Now, we need pieces from left to right, joining the two pieces. The frame will have a table row structure.
+>Step 2: Now, we need pieces from left to right, joining the two pieces. The frame will have a table row structure. The number of eggs that can be placed in each row depends on the width of the frame. In my case, it was 3 per row.
