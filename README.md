@@ -37,6 +37,7 @@ If we place the drum directly in a container with water, then it may be damaged 
 >Step 2: Take a small plastic can and make a hole at the center of it's lid so that the cotton roll can be attached to it.
 >
 >Step 3: Attach the cotton roll to the plastic can's lid such that a small portion of the roll ( about 0.3 cm ) comes out of lid and the rest is inside the can.
+>![Humidifier](/Images/Humidifier-2.jpg)
 >
 >Step 4: Fill the can with water and close the lid so that the cotton roll is dipped in the water. The capillary effect will cause water to rise up through the cotton roll.
 >
