@@ -1,3 +1,4 @@
+
 # Chicken Egg Incubator
 I have made this chicken egg incubator using the Arduino Uno microcontroller and a paint bucket. Chicken egg has 21 day incubation period. Both temperature as well as humidity need to be maintained during this period for successful hatch.
 
@@ -46,7 +47,7 @@ If we place the drum directly in a container with water, then it may be damaged 
 >
 >Step 6: Secure the drum in position using hot glue. Also fix the frequency generator circuit to the side of the container using hot glue.
 >
->Step 7: Put another small hole on the lid of the container and insert a hose through it. This can be used to refill the container without opening the incubator.
+>Step 7: Put another small hole near the bottom of the container and insert a level checking hose through it. Make the joint water tight by applying hot glue. This can be used to check the water level inside the container and refill it without opening the incubator.
 >
 >Step 8: Put some extra holes on the lid for ventilation. These are important for proper capillary action.
 >![Humidifier](/Images/Humidifier-1.jpg)
