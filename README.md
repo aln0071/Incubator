@@ -47,6 +47,7 @@ If we place the drum directly in a container with water, then it may be damaged 
 >Step 7: Put another small hole on the lid of the container and insert a hose through it. This can be used to refill the container without opening the incubator.
 >
 >Step 8: Put some extra holes on the lid for ventilation. These are important for proper capillary action.
+>![Humidifier](/Images/Humidifier-1.jpg)
 
 **Step 3: Building the egg holder base**
 Now, we need to build a base on which the eggs are placed. For this, take the chicken wire mesh and cut it to the length and breadth of the bucket. Place it inside the bucket and secure it in position using cable ties. You can put holes on the bucket using a heated iron nail and insert cable ties through those holes to secure the mesh.
@@ -57,5 +58,3 @@ Chicken egg need to be turned every 8 hours during the first 18 days of incubati
 >Step 1: Take the 1/2 inch cable raceway and cut two piece having (3/4)th of the length of your bucket. These pieces will form the left and right sides of your frame.
 >
 >Step 2: Now, we need pieces from left to right, joining the two pieces. The frame will have a table row structure.
-
-![Humidifier](/Images/Humidifier-1.jpg)
