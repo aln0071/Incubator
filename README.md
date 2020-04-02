@@ -42,6 +42,7 @@ If we place the drum directly in a container with water, then it may be damaged 
 >Step 4: Fill the can with water and close the lid so that the cotton roll is dipped in the water. The capillary effect will cause water to rise up through the cotton roll.
 >
 >Step 5: Position the piezoelectric vibrating drum on top of the exposed end of the cotton roll which is outside the container. Make sure that the drum touches the tip of the cotton roll gently. This will cause the water on the tip getting atomized due to the vibration of the drum.
+>![Humidifier](/Images/Humidifier-3.jpg)
 >
 >Step 6: Secure the drum in position using hot glue. Also fix the frequency generator circuit to the side of the container using hot glue.
 >
