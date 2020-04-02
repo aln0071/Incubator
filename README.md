@@ -57,3 +57,5 @@ Chicken egg need to be turned every 8 hours during the first 18 days of incubati
 >Step 1: Take the 1/2 inch cable raceway and cut two piece having (3/4)th of the length of your bucket. These pieces will form the left and right sides of your frame.
 >
 >Step 2: Now, we need pieces from left to right, joining the two pieces. The frame will have a table row structure.
+
+![Humidifier](/Images/Humidifier-1.jpg)
