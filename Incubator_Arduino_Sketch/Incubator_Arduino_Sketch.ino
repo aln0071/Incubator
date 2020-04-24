@@ -1,14 +1,43 @@
-/* 
+/*
+Arduino Incubator code
+By: Alan Kuriakose
+Date: 24th April 2020
+Email: aln0071@gmail.com
+Note: I have used sample code from Nathan Seidle for taking readings from the HTU21D humidity sensor.
+As he says in his beerware license, we owe him a beer. ( see line 35 )
+And for me, you can buy me a chocolate if we meet some day... :D
+
+License:
+
+    Incubator - An Arduino incubator code to control temperature and humidity
+    Copyright (C) 2020  Alan Kuriakose
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*/
+
+/*
  HTU21D Humidity Sensor Example Code
  By: Nathan Seidle
  SparkFun Electronics
  Date: September 15th, 2013
  License: This code is public domain but you buy me a beer if you use this and we meet someday (Beerware license).
- 
+
  Uses the HTU21D library to display the current humidity and temperature
- 
+
  Open serial monitor at 9600 baud to see readings. Errors 998 if not sensor is detected. Error 999 if CRC is bad.
-  
+
  Hardware Connections (Breakoutboard to Arduino):
  -VCC = 3.3V
  -GND = GND
@@ -19,12 +48,19 @@
 
  /*
   For first 18 days
+  ==================
   Temperature : 99.5 to 100 degree farenhiet = 37.5 to 37.7 degree celcius
   37.5 is ideal. Do not allow 102 degree farenheit ( 38.8 celcius ) for too long
   Let our temperature be from 37.5 to 38 degrees.
 
   Humidity: 50 to 55
   Let our humidity be 53 with 2 as variance
+
+  For last 3 days
+  ================
+  Temperature should be little bit less than usual. It should be close to 37.5 degrees.
+  Humidity should be above 65%. So, I am setting 69% to 70% humidity cutoff.
+
  */
 
 #include <Wire.h>
@@ -35,11 +71,15 @@
 #define HEAT 8
 #define HUMIDITY 9
 #define HUM_BUTTON 10
+#define MODE_BUTTON 13
 
-float thigh = 37.6;
-float tlow = 37.5;
-float hhigh = 70;
-float hlow = 69;
+float thigh = 37.8;
+float tlow = 37.6;
+float hhigh = 52;
+float hlow = 51;
+
+int mode = 0;
+String modeString = "01-17";
 
 int Contrast=75;
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
@@ -60,6 +100,7 @@ void setup()
   pinMode(HEAT, OUTPUT);
   pinMode(HUMIDITY, OUTPUT);
   pinMode(HUM_BUTTON, OUTPUT);
+  pinMode(MODE_BUTTON, INPUT);
 }
 
 boolean humidifier_on = false;
@@ -117,10 +158,38 @@ void turnOffTemperature() {
   temperature_on = false;
 }
 
+// function to change mode
+void setMode(int newMode) {
+  if(newMode == mode) {
+    return;
+  }
+  switch(newMode) {
+    case 0:
+      thigh = 37.8;
+      tlow = 37.6;
+      hhigh = 52;
+      hlow = 51;
+      modeString="01-17";
+      break;
+    case 1:
+      thigh = 37.6;
+      tlow = 37.5;
+      hhigh = 70;
+      hlow = 69;
+      modeString="18-21";
+      break;
+  }
+  mode = newMode;
+}
+
 void loop()
 {
   float humd = myHumidity.readHumidity();
   float temp = myHumidity.readTemperature();
+
+  // configuration for mode 2 - days 18-20;
+  int newMode = digitalRead(MODE_BUTTON);
+  setMode(newMode);
 
   lcd.clear();
   lcd.setCursor(0, 0);
@@ -129,6 +198,10 @@ void loop()
   lcd.setCursor(0, 1);
   lcd.print("Temp:");
   lcd.print(temp);
+  lcd.setCursor(11,0);
+  lcd.print("Days");
+  lcd.setCursor(11,1);
+  lcd.print(modeString);
 
   Serial.print("Time:");
   Serial.print(millis());
@@ -167,7 +240,7 @@ void loop()
       turnOnHumidifier();
     }
   }
-  
+
   // turn off fan and humidifier
   if(humd >= hhigh) {
     if(humidifier_on == true) {
@@ -188,7 +261,7 @@ void loop()
   if(temp >= thigh && temperature_on == true) {
     turnOffTemperature();
   }
-  
+
   /******************************************/
 
   Serial.println();
