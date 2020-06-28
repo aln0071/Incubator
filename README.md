@@ -69,7 +69,7 @@ A chicken egg needs to be turned every 8 hours during the first 18 days of incub
 Upload the program to the Arduino board. The board will continuously monitor temperature and humidity readings from the HTU21D humidity sensor. There are two modes of operation for this incubator - from 1 to 17 days and from 18 to 21 days. Different sets of temperature and humidity have to be maintained for these two periods.
 |Modes|Temperature ( °C )|Humidity ( % )|Egg turning|
 |---|---|---|---|
-|**Days 1 to 17**|37.5 to 40|50 to 55|Atleast every 8 hours|
+|**Days 1 to 17**|37.5 to 40|50 to 55|At least every 8 hours|
 |**Days 18 to 21**|37.5 to 37.6|above 65|Should not be turned|
 
 The Arduino will automatically regulate the temperature and humidity inside the bucket. The LCD screen will display the current temperature, humidity, and mode of operation of the board.
