@@ -94,6 +94,53 @@ Finally, amperage is a very important fact to consider while designing a power s
 **Step 7: Final assembly**
 The last step is to assemble the components. Set up housing for the Arduino board. I used an old plastic fruit container as the housing. I screwed it to the side of the bucket and placed the Arduino and the LCD screen inside it. Then I fixed the relay module to the side of the bucket using screws. I made a small hole on top of the bucket and took out the sensor wires through that hole and connected them to the Arduino. I made a small hole on the side of the bucket and took out the water supply hose of the humidifier through that hole. The hose needs to be transparent ( I used a level checking hose ) so that we can easily check the water level inside the humidifier without opening the incubator. Secure the hose to the side of the bucket using cable ties. Insert the Heater near to the lid of the bucket. Make sure the light is facing towards the lid. Finally, put some holes for ventilation on the lid using a heated iron nail.
 
+**Step 8: Connections**
+##### Interfacing Arduino with LCD Screen
+|Arduino|LCD Screen|
+|---|---|
+|GND|Vss|
+|5V|Vdd|
+|D6|Vo|
+|D12|Rs|
+|GND|Rw|
+|D11|E|
+|D5|D4|
+|D4|D5|
+|D3|D6|
+|D2|D7|
+|5v|A|
+|GND|K|
+
+##### Interfacing Arduino with HTU21D
+|Arduino|HTU21D|
+|---|---|
+|3.3V|VCC|
+|GND|GND|
+|A4|SDA|
+|A5|SCL|
+
+##### Interfacing Arduino with Relay module
+|Arduino|Relay Module|
+|---|---|
+|D7|Relay 1 Control|
+|D8|Relay 2 Control|
+|D9|Relay 3 Control|
+|D10|Relay 4 Control|
+
+##### Interfacing Relay with components
+|Relay Module|Component|Purpose|
+|---|---|---|
+|Relay 1|12V Fan power supply|Distribute heat|
+|Relay 2|230V Incandescent bulb|Heat source|
+|Relay 3|Humidifier power supply|Humidification|
+|Relay 4|Humidifier toggle switch|Turn humidifier on/off|
+
+##### Mode selection
+|Arduino|Mode|
+|---|---|
+|D13 to GND|Mode 1 - Days 1 to 17|
+|D13 to 5V|Mode 2 - Days 18 to 21|
+
 ## Things to remember
 1) Temperature and humidity need to be maintained throughout this project. So, frequently check the readings shown on the LCD screen.
 2) Egg turning is very important. If it is not done automatically, then you should turn them manually at least every 8 hours from days 1 to 17.
