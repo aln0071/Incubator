@@ -1,7 +1,10 @@
 
 
+
 # Chicken Egg Incubator
 I have made this chicken egg incubator using the Arduino Uno microcontroller and a paint bucket. A chicken egg has a 21 day incubation period. Both temperature, as well as humidity, need to be maintained during this period for a successful hatch.
+>[Click to play video](https://www.youtube.com/watch?v=g4gpmBDat7g&t=1s)<br/>
+>[![Incubator Video](https://i.ytimg.com/vi/g4gpmBDat7g/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCzsZ1GBde_9asK2zsRaL4HBt6P7Q)](https://www.youtube.com/watch?v=g4gpmBDat7g&t=1s)
 
 ## Things required
 - Paint bucket x 1
